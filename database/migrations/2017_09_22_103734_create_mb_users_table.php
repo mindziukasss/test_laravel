@@ -23,7 +23,7 @@ class CreateMbUsersTable extends Migration {
 			$table->string('last_name');
 			$table->string('email')->unique('email_UNIQUE');
 			$table->string('password');
-			$table->string('remember_token', 100);
+			$table->string('remember_token', 100)->nullable();
 		});
 	}
 
